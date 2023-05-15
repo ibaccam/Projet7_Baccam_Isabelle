@@ -1,12 +1,18 @@
 * {
     box-sizing: border-box;
     font-family: "Montserrat";
-  }
     
-
-
-  #bloc-page{
-    max-width: 1440px;
-    margin-right:auto;
-    margin-left:auto;
   }
+
+  body{
+    margin : 0 15px 0 15px;
+  }
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}

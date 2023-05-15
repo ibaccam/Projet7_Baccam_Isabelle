@@ -1,0 +1,24 @@
+.card {
+    width: 100%;
+    height: 255px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(180deg, $primary-color,$primary-color, $primary-color, #833131);
+    
+    &__img {
+        width: 100%;
+        height: 77%;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    &__title {
+        font-size: 13px;
+        font-weight: 500;
+        color: $white;
+        width: 54%;
+        margin: 13px;
+    }
+}
