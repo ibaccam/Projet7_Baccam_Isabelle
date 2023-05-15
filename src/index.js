@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import "./sass/index.css";
+import "./sass/style.css";
 
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
-import Card from './pages/Card.jsx'
+import Logement from './pages/Logement.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 
 
@@ -16,7 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element= {<Home />} />
         <Route path="/About" element= {<About/>} />
-        <Route path="/logement" element={<Card />} />
+        <Route path="/Logement" element={<Logement />} />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>

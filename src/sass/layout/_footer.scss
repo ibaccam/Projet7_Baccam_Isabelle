@@ -1,0 +1,26 @@
+.footer {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background: $black;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  
+    &__logo {
+      margin-top: 4%;
+    }
+  
+    &__text {
+      color: $white;
+      font-weight: 500;
+      font-size: 20px;
+  
+      @include media-inter($mobile, $tablet) {
+        font-size: 12px;
+      }
+    }
+  }
