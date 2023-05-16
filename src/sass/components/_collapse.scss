@@ -1,0 +1,38 @@
+.collapse {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    &__button {
+        color: $secondary-color;
+        width: 93%;
+        border: none;
+        border-radius: 5px;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 47px;
+        cursor: pointer;
+        font-size: 13px;
+        padding: 0 20px;
+    }
+
+    &__img {
+        width:16px;
+        height: 9px;
+    }
+    &__content {
+        margin: 0;
+        width:93%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17.11px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        padding: 21px 12px 52px 12px;
+    }
+}
