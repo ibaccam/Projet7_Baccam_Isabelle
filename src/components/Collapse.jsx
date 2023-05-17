@@ -13,7 +13,7 @@ function Collapse({title, content}) {
         // défini les classes selon si c'est visible ou caché, idem pour le chevron
         //const collapseContent = (open? "visible" : "hidden") + " collapse"
 
-        // permet de changer le sens du chevron si visible ou caché
+        // permet de changer le sens du chevron quand texte visible ou caché
         const collapseChevron = (open ? chevron_Up : chevron_Down)
       
     return (
