@@ -38,12 +38,12 @@ const prevSlide = () => {
     {/* S'il y a plus d'une image=>  on affiche les flèches et le compteur d'images */}
 
     {totalPicture > 1 ? (
-        <div className="carousel_scroll">
-            <button onClick={prevSlide}>
+        <div className="carousel__scroll">
+            <button className="carousel__scroll--button" onClick={prevSlide}>
                 <img src={chevron_Left} alt="flèche gauche" className="carousel__left" />
             </button>
 
-            <button onClick={nextSlide}>
+            <button className="carousel__scroll--button"onClick={nextSlide}>
                 <img src={chevron_Right} alt="flèche droit" className="carousel__rigth" />
             </button>
 

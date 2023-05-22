@@ -41,7 +41,7 @@ function Logement() {
           {/* Afffichage du titre, de l'emplacement et des tags */}
           <h1 className="product__title">{title}</h1>
           <p className="product__location">{location}</p>
-          <div className='div-tags'>
+          <div className='product__tags'>
             { product.tags.map((element, index) => {
               return(<p className='tags' key={"tags"+index}>{element}</p>)
             })}

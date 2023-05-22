@@ -85,6 +85,50 @@ a {
   margin: 13px;
 }
 
+.carousel {
+  display: flex;
+  height: 255px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+}
+.carousel__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.carousel__scroll {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 90%;
+}
+.carousel__scroll--button {
+  border: none;
+  background-color: transparent;
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+.carousel__left {
+  height: 100%;
+}
+.carousel__rigth {
+  height: 100%;
+}
+.carousel__counter {
+  color: #fff;
+  position: absolute;
+  bottom: 25px;
+  font-weight: 500;
+  left: 46%;
+  right: 46%;
+  font-size: 14px;
+}
+
 .collapse {
   margin-bottom: 25px;
   display: flex;
@@ -204,4 +248,69 @@ a {
   font-size: 14px;
   margin-top: 82px;
   text-decoration: underline;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+}
+.product__content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.product__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.product__location {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.product__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 77%;
+}
+.product__tags p {
+  font-size: 10px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  color: #fff;
+  margin-right: 10px;
+  padding: 5px;
+}
+.product__host-rating {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.product__host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+}
+.product__host img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product__host p {
+  text-align: right;
+  font-size: 12px;
+  margin: 0 10px;
+  font-weight: 500;
+}
+.product__collapse--eqt {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
