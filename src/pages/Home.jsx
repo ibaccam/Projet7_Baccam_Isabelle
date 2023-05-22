@@ -22,7 +22,7 @@ function Home() {
         {products.map((product) => {
           return (
             <article key={product.id}>
-              <Link to={`/logements/${product.id}`}>
+              <Link to={`/Logement/${product.id}`}>
                 <Cards image={product.cover} title={product.title}/>
               </Link>
             </article>
