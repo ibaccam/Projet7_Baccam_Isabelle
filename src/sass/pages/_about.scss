@@ -1,6 +1,18 @@
 .about {
     &__content {
-        max-width: 1023px;
         margin: auto;
+        height: auto;
+        min-height: 160px;
+ 
+    
+        @include media-min($tablet) {
+            width: 80%;
+            min-height: 679px;
+        }
+  
+        @include media-min($desktop) {
+            width: 77%;
+            min-height: 542px;
+        }
     }
 }
