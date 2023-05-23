@@ -15,10 +15,14 @@
     &__text {
       color: $white;
       font-weight: 500;
-      font-size: 20px;
+      font-size: 12px;
   
-      @include media-inter($mobile, $tablet) {
-        font-size: 12px;
+      @include media-min($tablet) {
+        font-size: 18px;
+      }
+
+      @include media-min($desktop) {
+        font-size: 24px;
       }
     }
   }

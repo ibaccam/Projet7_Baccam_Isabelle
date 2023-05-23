@@ -177,12 +177,34 @@ ul {
   justify-content: space-between;
   margin: 20px;
 }
+@media screen and (min-width: 768px) {
+  .navbar {
+    margin: 30px 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    margin: 40px 100px;
+  }
+}
 .navbar__link {
   display: flex;
   justify-content: space-around;
   width: 50%;
   text-transform: uppercase;
   font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .navbar__link {
+    width: 36%;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar__link {
+    width: 28%;
+    font-size: 24px;
+  }
 }
 .navbar__link--active, .navbar__link--inactive {
   width: 50%;
@@ -198,6 +220,16 @@ ul {
 }
 .navbar__img {
   height: 48px;
+}
+@media screen and (min-width: 768px) {
+  .navbar__img {
+    height: 52px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar__img {
+    height: 52px;
+  }
 }
 
 .footer {
@@ -216,11 +248,16 @@ ul {
 .footer__text {
   color: #fff;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 12px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer__text {
-    font-size: 12px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__text {
+    font-size: 24px;
   }
 }
 
@@ -240,14 +277,41 @@ ul {
   justify-content: center;
   height: 523px;
 }
+@media screen and (min-width: 768px) {
+  .error__info {
+    height: 1025px;
+  }
+}
 .error__number {
   font-weight: 700;
   font-size: 96px;
+}
+@media screen and (min-width: 768px) {
+  .error__number {
+    font-size: 150px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .error__number {
+    font-size: 288px;
+  }
 }
 .error__text {
   font-weight: 500;
   font-size: 18px;
   width: 260px;
+}
+@media screen and (min-width: 768px) {
+  .error__text {
+    font-size: 25px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .error__text {
+    font-size: 36px;
+    width: 100%;
+  }
 }
 .error__link {
   color: #ff6060;
@@ -255,6 +319,16 @@ ul {
   font-size: 14px;
   margin-top: 82px;
   text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .error__link {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .error__link {
+    font-size: 18px;
+  }
 }
 
 .product {

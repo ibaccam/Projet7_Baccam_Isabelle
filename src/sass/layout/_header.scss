@@ -3,6 +3,14 @@
     justify-content: space-between;
     margin : 20px;
     
+    @include media-min($tablet) {
+      margin: 30px 50px;
+    }
+
+    @include media-min($desktop) {
+      margin: 40px 100px;
+    }
+    
   
     &__link {
       display: flex;
@@ -10,6 +18,16 @@
       width: 50%;
       text-transform: uppercase;
       font-size: 12px;
+
+      @include media-min($tablet) {
+        width: 36%;
+        font-size: 20px;
+      }
+  
+      @include media-min($desktop) {
+        width: 28%;
+        font-size: 24px;
+      }
       
   
 
@@ -31,6 +49,16 @@
   
     &__img {
       height: 48px;
+
+      @include media-min($tablet) {
+        height: 52px;
+      }
+
+      @include media-min($desktop) {
+        height: 52px;
+      }
+
+
     }
   }
   
