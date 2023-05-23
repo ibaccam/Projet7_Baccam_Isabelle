@@ -18,7 +18,7 @@
         height: 47px;
         cursor: pointer;
         font-size: 13px;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     &__img {
@@ -32,7 +32,11 @@
         font-size: 12px;
         line-height: 17.11px;
         background-color: $secondary-color;
-        color: $primary-color;
-        padding: 21px 12px 52px 12px;
+        color: $primary-color;   
     }
+}
+ul{
+    display: inline-block; 
+        font-size: 12px;
+        padding: 0px 10px 24px 10px;  
 }

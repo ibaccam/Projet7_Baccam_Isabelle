@@ -19,7 +19,7 @@
       display: flex;
       position: absolute;
       justify-content: space-between;
-      width: 90%;
+      width: 84%;
 
       &--button{
         border: none;
@@ -44,11 +44,11 @@
     &__counter {
       color: $white;
       position: absolute;
-      bottom: 25px;
+      top: 110px;
       font-weight: 500;
       left: 46%;
       right :46%;
-      font-size: 14px;
+      font-size: 12px;
 
     }
   }

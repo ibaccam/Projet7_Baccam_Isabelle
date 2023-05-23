@@ -26,7 +26,15 @@ function Collapse({title, content}) {
             </button> 
             {open && (
                 <div className="collapse__content">
-                <div>{content}</div>
+                    <ul className="collapse__list">
+                        {Array.isArray(content) ? (   // vérifier si content est un tableau ( Array.isArray(content))
+                        content.map((equipment) => (  // Si c'est le cas, alors nous itérons sur les éléments du tableau avec content.map()
+                        <li className="collapse__list--element"> {equipment} </li>
+                        ))
+                        ) : (
+                    <p className="collapse__text">{content}</p> // Sinon, nous affichons directement content dans un paragraphe.
+                        )}
+                    </ul>
                 </div>
             )}
         </div>

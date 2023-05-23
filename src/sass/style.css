@@ -3,6 +3,8 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat";
+  font-family: "Montserrat";
+  font-family: "Montserrat";
 }
 
 body {
@@ -103,7 +105,7 @@ a {
   display: flex;
   position: absolute;
   justify-content: space-between;
-  width: 90%;
+  width: 84%;
 }
 .carousel__scroll--button {
   border: none;
@@ -122,11 +124,11 @@ a {
 .carousel__counter {
   color: #fff;
   position: absolute;
-  bottom: 25px;
+  top: 110px;
   font-weight: 500;
   left: 46%;
   right: 46%;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .collapse {
@@ -148,7 +150,7 @@ a {
   height: 47px;
   cursor: pointer;
   font-size: 13px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .collapse__img {
   width: 16px;
@@ -162,7 +164,12 @@ a {
   line-height: 17.11px;
   background-color: #f7f7f7;
   color: #ff6060;
-  padding: 21px 12px 52px 12px;
+}
+
+ul {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0px 10px 24px 10px;
 }
 
 .navbar {
@@ -275,15 +282,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 77%;
+  text-align: center;
 }
 .product__tags p {
+  width: 84px;
+  height: 18px;
   font-size: 10px;
   border-radius: 5px;
   background-color: #ff6060;
   color: #fff;
   margin-right: 10px;
-  padding: 5px;
+  padding: 3px;
 }
 .product__host-rating {
   display: flex;
@@ -310,7 +319,13 @@ a {
   margin: 0 10px;
   font-weight: 500;
 }
-.product__collapse--eqt {
+.product__rating {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+.product__rating--star {
+  width: 13.41px;
+  height: 13px;
 }/*# sourceMappingURL=style.css.map */
