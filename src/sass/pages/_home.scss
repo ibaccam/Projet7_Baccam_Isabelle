@@ -1,0 +1,25 @@
+.home{
+    &__gallery{
+        @include media-min($tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            background-color: $secondary-color;
+            padding: 30px 10px 30px 10px;
+          }
+   
+          @include media-min($desktop) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1240px;
+            align-items: center;
+            flex-direction: row;
+            margin: 40px 300px 40px 300px;
+            background-color: $secondary-color;
+            padding:30px;
+            border-radius: 25px;
+          }
+          }
+    }

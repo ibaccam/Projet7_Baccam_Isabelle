@@ -22,11 +22,13 @@
       @include media-min($tablet) {
         width: 36%;
         font-size: 20px;
+        text-transform: none;
       }
   
       @include media-min($desktop) {
         width: 28%;
         font-size: 24px;
+        text-transform: none;
       }
       
   
