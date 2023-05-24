@@ -30,6 +30,10 @@
     font-size: 18px;
     font-weight: 500;
 
+    @include media-min($tablet) {
+      font-size: 27px;
+    }
+
     @include media-min($desktop) {
       font-size: 36px;
     }
@@ -40,6 +44,10 @@
     font-weight: 500;
     margin-top: 5px;
     margin-bottom: 10px;
+
+    @include media-min($tablet) {
+      font-size: 16px;
+    }
 
     @include media-min($desktop) {
       font-size: 18px;
@@ -62,6 +70,13 @@
     color:$white;
     margin-right: 10px;
     padding: 3px;
+
+    @include media-min($tablet) {
+      width: 100px;
+      height: 22px;
+      font-size: 12px;
+      border-radius: 10px;
+    }
 
     @include media-min($desktop) {
       width: 115px;
@@ -100,6 +115,11 @@
       border-radius: 50%;
       object-fit: cover;
 
+      @include media-min($tablet) {
+        width: 48px;
+        height: 48px;
+        }
+
       @include media-min($desktop) {
       width: 64px;
       height: 64px;
@@ -112,6 +132,10 @@
       margin: 0 10px;
       font-weight: 500;
 
+      @include media-min($tablet) {
+        font-size: 16px;
+      }
+
       @include media-min($desktop) {
         font-size: 18px;
       }
@@ -123,6 +147,11 @@
     align-items: center;
     width:25%;
 
+    @include media-min($tablet) {
+      width: 16%;
+      margin: 20px 0 20px 0;
+    }
+
     @include media-min($desktop) {
       width: 100%;
       margin: 20px 0 20px 0;
@@ -131,6 +160,11 @@
     &--star {
       width: 13.41px;
       height: 13px;
+
+      @include media-min($tablet) {
+        width: 18.75px;
+        height: 18px;
+      }
 
       @include media-min($desktop) {
         width: 24.75px;
@@ -142,6 +176,24 @@
   &__collapse{
     @include media-min($tablet) {
     min-height: 515px;
+
+    & > div{
+      & > button {
+        font-size: 15px;
+        border-radius: 10px;
+      }
+
+      & > div.collapse__content {
+      border-radius: 0 0 10px 10px;
+      padding : 15px 0;
+
+        & > p, ul {
+          font-size: 15px;
+          line-height: 25,67px;
+        }
+      }
+    }
+
     }
     @include media-min($desktop) {
       display: grid;
@@ -157,7 +209,7 @@
         & > div.collapse__content {
         border-radius: 0 0 10px 10px;
         padding : 35px 0;
-        height: 259px;
+        height: 300px;
 
           & > p, ul {
             font-size: 18px;

@@ -27,7 +27,6 @@
 
       @include media-min($desktop) {
         width: 82%;
-        max-width: 1200px;
       }
 
       &--button{
@@ -37,6 +36,10 @@
         padding: 0;
         cursor: pointer;
         filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+
+        @include media-min($tablet) {
+          height: 40px;
+        }
         
         @include media-min($desktop) {
           height: 79px;
@@ -62,6 +65,7 @@
       left: 46%;
       right :46%;
       font-size: 12px;
+      text-align: center;
 
       @include media-min($desktop) {
         font-size: 18px;
