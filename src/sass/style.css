@@ -74,6 +74,7 @@ a {
 @media screen and (min-width: 992px) {
   .banner__title {
     font-size: 48px;
+    line-height: 48px;
   }
 }
 .banner__filigrane {
@@ -544,7 +545,7 @@ ul {
 @media screen and (min-width: 992px) {
   .home__gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
     justify-items: center;
     border-radius: 25px;
     margin-top: 40px;

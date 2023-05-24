@@ -24,7 +24,7 @@
    
       @include media-min($desktop) {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
         justify-items: center;
         border-radius: 25px;
         margin-top: 40px;
