@@ -14,20 +14,21 @@ function About() {
   const securite  = "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
   return (
     <section className='about'>
-      <div className='about__bloc'>
         <Header />
-        <div className="about__banner">
-          <Banner image={bannerAbout} />
-        </div>
-        <div className='about__content'>
-          <div><Collapse title="Fiabilité" content={fiabilite} /></div>
-          <div><Collapse title="Respect" content={respect} /></div>
-          <div><Collapse title="Service" content={service} /></div>
-          <div><Collapse title="Sécurité" content={securite} /></div>
-        </div>
-      </div>
-      <Footer />
-    </section>)
+        <section className='about__main'>
+          <div className="about__banner">
+            <Banner image={bannerAbout} />
+          </div>
+          <div className='about__content'>
+            <div><Collapse title="Fiabilité" content={fiabilite} /></div>
+            <div><Collapse title="Respect" content={respect} /></div>
+            <div><Collapse title="Service" content={service} /></div>
+            <div><Collapse title="Sécurité" content={securite} /></div>
+          </div>
+        </section>
+        <Footer />
+    </section>
+  )
 }
 
 export default About

@@ -2,13 +2,13 @@
   color: $primary-color;
   text-align: center;
 
-    &__bloc{
-      margin: 20px;
+    &__main{
+      margin: 0 20px;
       @include media-min($tablet) {
-       margin: 30px 50px;
+       margin: 0 50px;
       }
       @include media-min($desktop) {
-       margin: 40px 100px;
+       margin: 0 100px;
       }
    }
      

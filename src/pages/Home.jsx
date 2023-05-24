@@ -14,8 +14,8 @@ const slogan = "Chez vous, partout et ailleurs"
 function Home() {
   return (
     <section className="home">
-      <section className="home__bloc">
-        <Header/>
+      <Header/>
+      <section className="home__main">
         <div className="home__banner">
           <Banner image={bannerHome} title={slogan}/>
         </div>
@@ -34,6 +34,6 @@ function Home() {
       <Footer/>
     </section>
   )
-};
+}
 
 export default Home;

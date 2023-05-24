@@ -3,13 +3,13 @@
   flex-direction: column;
   color: $primary-color;
     
-  &__bloc{
-    margin: 20px;
+  &__main{
+    margin: 0 20px;
     @include media-min($tablet) {
-     margin: 30px 50px;
+     margin: 0 50px;
     }
     @include media-min($desktop) {
-     margin: 40px 100px;
+     margin: 0 100px;
     }
   }
 
@@ -21,6 +21,7 @@
     @include media-min($desktop) {
       flex-direction: row;
       justify-content:space-between;
+      margin: 30px 0 0;    
     }
   }
   
@@ -66,6 +67,7 @@
       width: 115px;
       height: 25px;
       font-size: 14px;
+      border-radius: 10px;
     }
   }
   
@@ -155,12 +157,15 @@
         & > div.collapse__content {
         border-radius: 0 0 10px 10px;
         padding : 35px 0;
+        height: 259px;
 
-        & > p, ul {
-          font-size: 18px;
-          line-height: 25,67px;
+          & > p, ul {
+            font-size: 18px;
+            line-height: 25,67px;
+          }
         }
       }
-      }}}
+    }
+  }
 }
 

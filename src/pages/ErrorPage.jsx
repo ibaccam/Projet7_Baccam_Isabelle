@@ -5,8 +5,8 @@ import Footer from "../layout/Footer";
 function ErrorPage() {
   return (
     <section className='error'>
-      <div className='error__bloc'>
-        <Header/>
+      <Header/>
+      <section className='error__main'>
         <div className='error__info'>
           <span className='error__number'>404</span>
           <h1 className='error__text'>Oups! La page que vous demandez n'existe pas.</h1>
@@ -14,10 +14,10 @@ function ErrorPage() {
             Retourner sur la page d’accueil
           </Link>
         </div>   
-      </div>
+      </section>
       <Footer/>
     </section>
-  );
-};
+  )
+}
 
 export default ErrorPage;

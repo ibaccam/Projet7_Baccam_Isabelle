@@ -1,6 +1,6 @@
 .about {
-    &__bloc{
-        margin: 20px;
+    &__main{
+        margin: 0 20px;
         @include media-min($tablet) {
          margin: 30px 50px;
         }

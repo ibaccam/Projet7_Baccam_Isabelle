@@ -5,12 +5,7 @@
     border-radius: 10px;
     overflow: hidden;
 
-    @include media-min($tablet) {
-
-    }
-
     @include media-min($desktop) {
-
       height: 223px;
     }
   
@@ -28,6 +23,7 @@
   
       @include media-min($desktop) {
         transform: none;
+        border-radius: 10px;
       }
     }
   
@@ -67,6 +63,7 @@
   
 .about__banner > .banner {
 height: 223px;
+border-radius: 25px;
 }
 
 .about__banner > .banner__banner__img {
@@ -74,5 +71,13 @@ height: 223px;
 
     @include media-min($desktop) {
       transform: none;
+
+
   }
+}
+.about__banner > .banner__banner__filigrane {
+    @include media-min($desktop) {
+      border-radius: 25px;
+  
+    }
 }
