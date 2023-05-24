@@ -36,43 +36,43 @@ function Logement() {
 
   return (
     <section className="product">
-      <Header/>
-      <Carousel pictures={pictures} />
+      <div className="product__bloc">
+        <Header/>
+        <Carousel pictures={pictures} />
       
-
-      <div className="product__content">
-        <div className="product__informations">
-          {/* Afffichage du titre, de l'emplacement et des tags */}
-          <h1 className="product__title">{title}</h1>
-          <p className="product__location">{location}</p>
-          <div className='product__tags'>
-            { product.tags.map((element) => {
-              return(<p className='tags' key={"tags"}>{element}</p>)
-            })}
-          </div>
-        </div>
-      
-          {/* Afffichage du propriétaire et les étoles */}
-          <div className="product__host-rating">
-
-            {/* Afffichage du propriétaire et sa photo */}
-            <div className='product__host'>
-              <p>{host.name}</p>
-              <img src={host.picture} alt={title} />
+        <div className="product__content">
+          <div className="product__informations">
+            {/* Afffichage du titre, de l'emplacement et des tags */}
+            <h1 className="product__title">{title}</h1>
+            <p className="product__location">{location}</p>
+            <div className='product__tags'>
+              { product.tags.map((element) => {
+                return(<p className='tags' key={"tags"}>{element}</p>)
+              })}
             </div>
+          </div>
+      
+            {/* Afffichage du propriétaire et les étoles */}
+            <div className="product__host-rating">
 
-            {/* Afffichage des étoiles et des notes*/}
-            <div className='product__rating'>
-              { stars.map((star) =>
-                rating >= star ? (
-                  <img
-                    key={star.toString()}
-                    className="product__rating--star"
-                    src={Starred}
-                    alt="étoile rouge"
-                  />) : (
-                  <img
-                    key={star.toString()}
+              {/* Afffichage du propriétaire et sa photo */}
+              <div className='product__host'>
+                <p>{host.name}</p>
+                <img src={host.picture} alt={title} />
+              </div>
+
+              {/* Afffichage des étoiles et des notes*/}
+              <div className='product__rating'>
+                { stars.map((star) =>
+                  rating >= star ? (
+                    <img
+                      key={star.toString()}
+                      className="product__rating--star"
+                      src={Starred}
+                      alt="étoile rouge"
+                    />) : (
+                    <img
+                      key={star.toString()}
                       className="product__rating--star"
                       src={Stargrey}
                       alt="étoile grise"
@@ -84,10 +84,11 @@ function Logement() {
           </div>
         </div>
 
-      {/* Afficahge de la description et des équipements */}
-      <div className="product__collapse">
-        <Collapse title="Description" content={description} />
-        <Collapse title="Équipements" content={equipments}/>
+        {/* Affichage de la description et des équipements */}
+        <div className="product__collapse">
+          <Collapse title="Description" content={description} />
+          <Collapse title="Équipements" content={equipments}/>
+        </div>
       </div>
       <Footer /> 
     </section>

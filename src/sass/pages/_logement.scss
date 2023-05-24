@@ -1,85 +1,166 @@
 .product {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color;
+    
+  &__bloc{
+    margin: 20px;
+    @include media-min($tablet) {
+     margin: 30px 50px;
+    }
+    @include media-min($desktop) {
+     margin: 40px 100px;
+    }
+  }
+
+  &__content {
     display: flex;
     flex-direction: column;
-    color: $primary-color;
-    
-  
-    &__content {
-      display: flex;
-      flex-direction: column;
-      margin: 20px;
+    margin: 15px 0 0;
+
+    @include media-min($desktop) {
+      flex-direction: row;
+      justify-content:space-between;
     }
+  }
   
-    &__title {
-      margin: 0;
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+
+    @include media-min($desktop) {
+      font-size: 36px;
+    }
+  }
+  
+  &__location {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    @include media-min($desktop) {
       font-size: 18px;
-      font-weight: 500;
-     }
+    }
+  }
   
-    &__location {
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  &__tags p{
+    width: 84px;
+    height: 18px;
+    font-size: 10px;
+    border-radius: 5px;
+    background-color: $primary-color;
+    color:$white;
+    margin-right: 10px;
+    padding: 3px;
+
+    @include media-min($desktop) {
+      width: 115px;
+      height: 25px;
       font-size: 14px;
-      font-weight: 500;
-      margin-top: 5px;
-      margin-bottom: 10px;
-
     }
+  }
   
-    &__tags {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      text-align: center;
-    }
-    &__tags p{
-      width: 84px;
-      height: 18px;
-      font-size: 10px;
-      border-radius: 5px;
-      background-color: $primary-color;
-      color:$white;
-      margin-right: 10px;
-      padding: 3px;
-    }
-  
+  &__host-rating {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
 
-    &__host-rating {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      align-items: center;
+    @include media-min($desktop) {
+      flex-direction: column;
+      align-items: flex-end;
     }
+  }
 
-    &__host {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 30%;
+  &__host {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+
+    @include media-min($desktop) {
+      width: 9%;
     }
+  }
 
-      &__host img {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        object-fit: cover;
+    &__host img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+
+      @include media-min($desktop) {
+      width: 64px;
+      height: 64px;
+      }
     }
 
     &__host p {
-        text-align: right;
-        font-size: 12px;
-        margin: 0 10px;
-        font-weight: 500;
-    }
+      text-align: right;
+      font-size: 12px;
+      margin: 0 10px;
+      font-weight: 500;
 
+      @include media-min($desktop) {
+        font-size: 18px;
+      }
+    }
 
   &__rating{     
     display: flex;
     justify-content: space-between;
     align-items: center;
     width:25%;
+
+    @include media-min($desktop) {
+      width: 100%;
+      margin: 20px 0 20px 0;
+    }
    
     &--star {
       width: 13.41px;
       height: 13px;
+
+      @include media-min($desktop) {
+        width: 24.75px;
+        height: 24px;
+      }
+    }
   }
+
+  &__collapse{
+    @include media-min($tablet) {
+    min-height: 515px;
+    }
+    @include media-min($desktop) {
+      display: grid;
+      grid-template-columns: repeat(2,53%);
+      align-items: start;
+
+      & > div{
+        & > button {
+          font-size: 18px;
+          border-radius: 10px;
+        }
+  
+        & > div.collapse__content {
+        border-radius: 0 0 10px 10px;
+        padding : 35px 0;
+
+        & > p, ul {
+          font-size: 18px;
+          line-height: 25,67px;
+        }
+      }
+      }}}
 }
-}
+

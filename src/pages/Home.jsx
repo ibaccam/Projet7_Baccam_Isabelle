@@ -13,24 +13,26 @@ const slogan = "Chez vous, partout et ailleurs"
 
 function Home() {
   return (
-    <div className="home">
-      <Header/>
-      <div className="home__banner">
-        <Banner image={bannerHome} title={slogan}/>
-      </div>
-      <section className="home__gallery">
-        {products.map((product) => {
-          return (
-            <article key={product.id}>
-              <Link to={`/Logement/${product.id}`}>
-                <Cards image={product.cover} title={product.title}/>
-              </Link>
-            </article>
-          );
-        })}
+    <section className="home">
+      <section className="home__bloc">
+        <Header/>
+        <div className="home__banner">
+          <Banner image={bannerHome} title={slogan}/>
+        </div>
+        <section className="home__gallery">
+          {products.map((product) => {
+            return (
+              <article key={product.id}>
+                <Link to={`/Logement/${product.id}`}>
+                  <Cards image={product.cover} title={product.title}/>
+                </Link>
+              </article>
+            );
+          })}
+        </section>
       </section>
       <Footer/>
-    </div>
+    </section>
   )
 };
 

@@ -1,6 +1,16 @@
 .error {
-    color: $primary-color;
-    text-align: center;
+  color: $primary-color;
+  text-align: center;
+
+    &__bloc{
+      margin: 20px;
+      @include media-min($tablet) {
+       margin: 30px 50px;
+      }
+      @include media-min($desktop) {
+       margin: 40px 100px;
+      }
+   }
      
     &__info {
       display: flex;

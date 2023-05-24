@@ -2,7 +2,7 @@
     height: 255px;
     display:flex;
     flex-direction: column;
-    margin : 20px 15px 20px 15px;
+    margin : 20px 0px;
     border-radius: 10px;
     overflow: hidden;
     background: linear-gradient(180deg, $primary-color,$primary-color, $primary-color, #833131);
@@ -10,13 +10,13 @@
     @include media-min($tablet) {
         width: 340px;
         height: 340px;
-        margin : 20px 26px 20px 26px;
+
       }
 
       @include media-min($desktop) {
         width: 340px;
         height: 340px;
-        margin : 20px 26px 20px 26px;
+
       }
     
     &__img {

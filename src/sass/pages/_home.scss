@@ -1,25 +1,35 @@
 .home{
-    &__gallery{
-        @include media-min($tablet) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: row;
-            background-color: $secondary-color;
-            padding: 30px 10px 30px 10px;
-          }
-   
-          @include media-min($desktop) {
-            display: flex;
-            flex-wrap: wrap;
-            width: 1240px;
-            align-items: center;
-            flex-direction: row;
-            margin: 40px 300px 40px 300px;
-            background-color: $secondary-color;
-            padding:30px;
-            border-radius: 25px;
-          }
-          }
+  &__bloc{
+     margin: 20px;
+     @include media-min($tablet) {
+      margin: 30px 50px;
+     }
+     @include media-min($desktop) {
+      margin: 40px 100px;
+     }
+  }
+    
+  &__gallery{
+
+    @include media-min($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      background-color: $secondary-color;
+      padding: 30px 10px 30px 10px;
+      border-radius: 25px;
     }
+   
+      @include media-min($desktop) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        justify-items: center;
+        border-radius: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 25px;
+      }
+    }
+  }

@@ -1,16 +1,16 @@
 .banner {
     height: 111px;
     position: relative;
-    margin : 20px 15px 20px 15px;
+    margin : 20px 0px;
     border-radius: 10px;
     overflow: hidden;
 
     @include media-min($tablet) {
-      margin : 20px 50px 20px 50px;
+
     }
 
     @include media-min($desktop) {
-      margin : 20px 100px 20px 100px;
+
       height: 223px;
     }
   
@@ -52,9 +52,6 @@
 
       @include media-min($desktop) {
         font-size: 48px;
-        top: 26%;
-        right: 30%;
-        left:30%;
       }
     }
   

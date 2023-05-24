@@ -8,7 +8,7 @@
 
     &__button {
         color: $secondary-color;
-        width: 93%;
+        width: 100%;
         border: none;
         border-radius: 5px;
         background-color: $primary-color;
@@ -16,6 +16,8 @@
         justify-content: space-between;
         align-items: center;
         height: 30px;
+        position: relative;
+        bottom: -14px;
         cursor: pointer;
         font-size: 13px;
         padding: 0 10px;
@@ -45,13 +47,19 @@
           }
     }
     &__content {
-        margin: 0;
-        width:93%;
+        width:100%;
         font-weight: 400;
         font-size: 12px;
         line-height: 17.11px;
         background-color: $secondary-color;
-        color: $primary-color;   
+        color: $primary-color;  
+        border-radius: 5px; 
+        padding:15px 0;
+
+
+        @include media-min($desktop) {
+          height: 249px;
+        }
     }
 }
 ul{
@@ -72,3 +80,17 @@ ul{
             margin:0;
         }
 }
+
+    .product__collapse > .collapse {
+      @include media-min($desktop) {
+      width:90%;
+      }
+    }
+    
+
+    
+
+
+    
+
+

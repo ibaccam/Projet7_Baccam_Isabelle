@@ -1,4 +1,14 @@
 .about {
+    &__bloc{
+        margin: 20px;
+        @include media-min($tablet) {
+         margin: 30px 50px;
+        }
+        @include media-min($desktop) {
+         margin: 40px 100px;
+        }
+     }
+
     &__content {
         margin: auto;
         height: auto;
