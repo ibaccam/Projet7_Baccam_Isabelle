@@ -62,14 +62,15 @@ function Logement() {
 
             {/* Afffichage des étoiles et des notes*/}
             <div className='product__rating'>
-              { stars.map((star) =>
-                rating >= star ? (
-                  <img
-                    key={star.toString()}
-                    className="product__rating--star"
-                    src={Starred}
+              { stars.map((star) =>   // tableau appelé stars, et pour chaque élément star dans ce tableau, le code sera exécuté //
+                rating >= star ? (    // expression conditionnelle : vérifie si la variable rating >= à la valeur de l'étoile actuelle (star). //
+                // Si c'est le cas, il exécute le code entre les parenthèses après le point d'interrogation (?)
+                  <img                            
+                    key={star.toString()}  // Cela attribue à chaque image une clé unique basée sur la valeur de l'étoile, convertie en chaîne de caractères.
+                    className="product__rating--star" // Cela attribue une classe CSS à l'image 
+                    src={Starred}     //Cela définit l'URL de la source de l'image pour afficher une étoile rouge
                     alt="étoile rouge"
-                  />) : (
+                  />) : (             // , sinon il exécute le code entre les parenthèses après les deux-points (:).
                   <img
                     key={star.toString()}
                     className="product__rating--star"
