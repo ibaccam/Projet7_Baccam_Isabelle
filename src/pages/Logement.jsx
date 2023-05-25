@@ -45,8 +45,8 @@ function Logement() {
           <h1 className="product__title">{title}</h1>
           <p className="product__location">{location}</p>
           <div className='product__tags'>
-            { product.tags.map((element) => {
-              return(<p className='tags' key={"tags"}>{element}</p>)
+            { product.tags.map((element, index) => {
+              return(<p className='tags' key={"tags-"+index}>{element}</p>)
             })}
           </div>
         </div>
