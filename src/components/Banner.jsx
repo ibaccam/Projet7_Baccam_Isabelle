@@ -1,6 +1,6 @@
 import React from "react";
 
-// Banner récupère 2 propriétés => image & title
+// Banner récupère 2 props => image & title
 function Banner({ image, title }) {
   return (
     <div className="banner">

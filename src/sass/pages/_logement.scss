@@ -191,7 +191,7 @@
     }
     @include media-min($desktop) {
       display: grid;
-      grid-template-columns: repeat(2,53%);
+      grid-template-columns: repeat(2,52.55%);
       align-items: start;
 
       & > div{
