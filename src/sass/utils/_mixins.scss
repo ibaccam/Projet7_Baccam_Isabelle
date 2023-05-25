@@ -15,3 +15,15 @@
         &{ @content; }
     }
 }
+
+// margin
+
+@mixin margin-main {
+    margin: 0 20px;
+    @include media-min($tablet) {
+     margin: 30px 50px;
+    }
+    @include media-min($desktop) {
+     margin: 40px 100px;
+    }
+    }

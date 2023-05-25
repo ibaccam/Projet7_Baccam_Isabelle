@@ -3,14 +3,8 @@
   text-align: center;
 
     &__main{
-      margin: 0 20px;
-      @include media-min($tablet) {
-       margin: 0 50px;
-      }
-      @include media-min($desktop) {
-       margin: 0 100px;
-      }
-   }
+      @include margin-main;
+    } 
      
     &__info {
       display: flex;

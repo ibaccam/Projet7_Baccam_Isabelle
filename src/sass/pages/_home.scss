@@ -1,14 +1,8 @@
 .home{
   &__main{
-     margin: 0 20px;
-     @include media-min($tablet) {
-      margin: 30px 50px;
-     }
-     @include media-min($desktop) {
-      margin: 40px 100px;
-     }
+    @include margin-main;
   }
-    
+
   &__gallery{
 
     @include media-min($tablet) {
